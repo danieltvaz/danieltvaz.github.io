@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./styles/global/Global";
-import About from "./containers/About";
+import Welcome from "./containers/Welcome";
 import useTheme from "./hooks/useTheme";
 import Header from "./containers/Header";
 import ThemedButton from "./components/ThemeButton";
@@ -14,7 +14,7 @@ function App() {
         <GlobalStyle />
         <Header />
         <ThemedButton toggleTheme={toggleTheme} />
-        <About />
+        <Welcome />
       </ThemeProvider>
     </>
   );

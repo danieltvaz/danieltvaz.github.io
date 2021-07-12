@@ -1,14 +1,9 @@
 import styled from "styled-components";
 
 const Paragraph = styled.p`
-  text-align: center;
+  color: ${({ theme }) => theme.textColor};
 `;
 
-export default function SectionParagraph() {
-  return (
-    <Paragraph>
-      Lorem ipsum imetsu Lorem ipsum imetsu Lorem ipsum imetsu Lorem ipsum
-      imetsu Lorem ipsum imetsu Lorem ipsum imetsu{" "}
-    </Paragraph>
-  );
+export default function SectionParagraph({ children }) {
+  return <Paragraph>{children}</Paragraph>;
 }

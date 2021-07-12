@@ -54,9 +54,11 @@ const NavItem = styled.a`
   text-decoration: none;
   font-weight: 800;
   outline: none;
+  border-bottom: 2px solid transparent;
   @media screen and (min-width: 768px) {
     &:hover {
       color: ${({ theme }) => theme.activeColor};
+      border-bottom: 2px solid ${({ theme }) => theme.activeColor};
     }
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
