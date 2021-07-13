@@ -4,6 +4,7 @@ import Welcome from "./containers/Welcome";
 import useTheme from "./hooks/useTheme";
 import Header from "./containers/Header";
 import ThemedButton from "./components/ThemeButton";
+import Skills from "./containers/Skills";
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -15,6 +16,7 @@ function App() {
         <Header />
         <ThemedButton toggleTheme={toggleTheme} />
         <Welcome />
+        <Skills />
       </ThemeProvider>
     </>
   );

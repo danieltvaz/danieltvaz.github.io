@@ -6,7 +6,7 @@ const themes = {
     textColor: "#171617",
     activeColor: "#02b0d9",
     highlight: "#8257e5",
-    foreground: "rgb(220,220,220)",
+    foreground: "rgb(240,240,240)",
     background: "#ffffff",
   },
   dark: {
@@ -14,7 +14,7 @@ const themes = {
     textColor: "#ebebeb",
     activeColor: "#02b0d9",
     highlight: "#8257e5",
-    foreground: "rgb(3,6,7, 0.9)",
+    foreground: "rgb(30,30,30)",
     background: "#000000",
   },
 };

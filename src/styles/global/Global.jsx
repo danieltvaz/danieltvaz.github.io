@@ -10,8 +10,11 @@ const GlobalStyle = createGlobalStyle`
     
 }
 body{
-    background: ${({ theme }) => theme.foreground};
+    background: ${({ theme }) => theme.background};
 
+}
+div{
+    /* border:1px solid red; */
 }
 
 `;

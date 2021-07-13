@@ -6,6 +6,9 @@ const StyledTitle = styled.h2`
   border-bottom: 2px solid ${({ theme }) => theme.activeColor};
   width: fit-content;
   margin-bottom: 50px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
 `;
 export default function Title({ children }) {
   return <StyledTitle>{children}</StyledTitle>;

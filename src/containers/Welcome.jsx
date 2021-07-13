@@ -8,7 +8,10 @@ export default function About() {
     <ContentWrapper>
       <Title>Seja bem vindo ao meu portfólio</Title>
       <SectionParagraph>
-        <TypingText>asdasdasdasdasdasdasdasdasdasdasdasd</TypingText>
+        <TypingText>
+          Meu nome é Daniel, desenvolvedor frontend para web e o que mais gosto
+          de fazer é programar.
+        </TypingText>
       </SectionParagraph>
     </ContentWrapper>
   );

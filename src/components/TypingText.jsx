@@ -30,8 +30,14 @@ const Wrapper = styled.div`
   display: block;
   overflow: hidden;
   max-width: fit-content;
+  white-space: nowrap;
   animation: ${blinkingCursor} 0.5s step-end infinite,
     ${growingContainer} 10s steps(100, end) infinite;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    animation: none;
+    white-space: normal;
+  }
 `;
 
 export default function TypingText({ children }) {
