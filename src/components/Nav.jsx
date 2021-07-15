@@ -81,8 +81,8 @@ export default function Nav() {
       </Hamburguer>
       <NavItemsContainer isOpen={isOpen}>
         <NavItem href="#">Sobre mim</NavItem>
-        <NavItem href="#">Acadêmico</NavItem>
-        <NavItem href="#">Skills</NavItem>
+        <NavItem href="#">Habilidades</NavItem>
+        <NavItem href="#">Certificações</NavItem>
       </NavItemsContainer>
     </Container>
   );
