@@ -7,6 +7,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     transition: background 0.5s, color 0.5s;
+
+  
     
 }
 body{

@@ -24,16 +24,6 @@ const GridContainer = styled.div`
   }
 `;
 
-const GridItem = styled.div`
-  display: flex;
-  /* flex: 1; */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 0;
-  border: 5px inset ${({ theme }) => theme.activeColor};
-`;
-
 const SkillName = styled.h3`
   color: ${({ theme }) => theme.textColor};
   border-bottom: 2px solid ${({ theme }) => theme.activeColor};
@@ -41,6 +31,23 @@ const SkillName = styled.h3`
   margin-bottom: 20px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     font-size: 10px;
+  }
+`;
+
+const GridItem = styled.div`
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  border: 5px inset ${({ theme }) => theme.activeColor};
+  transition: transform 0.5s;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &${SkillName}:hover {
+    color: red;
   }
 `;
 
