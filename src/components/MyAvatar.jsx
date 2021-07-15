@@ -1,7 +1,15 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  display: inline-block;
+  display: flex;
+  /* border: 1px solid blue; */
+  width: 1024px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 const Photo = styled.img`
