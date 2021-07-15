@@ -8,6 +8,7 @@ const StyledTitle = styled.h2`
   margin-bottom: 50px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 10px;
+    text-align: center;
   }
 `;
 export default function Title({ children }) {

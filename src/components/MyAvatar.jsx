@@ -5,16 +5,22 @@ const Wrapper = styled.div`
   /* border: 1px solid blue; */
   width: 1024px;
   margin: auto;
+  flex: 1;
   align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     flex-direction: column;
+    max-width: 100%;
   }
 `;
 
 const Photo = styled.img`
   width: 300px;
+  flex: 1;
   border-radius: 10px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    max-width: 35%;
+  }
 `;
 
 export default function MyAvatar({ children }) {
