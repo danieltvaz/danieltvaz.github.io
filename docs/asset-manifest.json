@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.js": "/static/js/main.3b72edda.chunk.js",
-    "main.js.map": "/static/js/main.3b72edda.chunk.js.map",
+    "main.js": "/static/js/main.efb372e5.chunk.js",
+    "main.js.map": "/static/js/main.efb372e5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5ea80dd8.js",
     "runtime-main.js.map": "/static/js/runtime-main.5ea80dd8.js.map",
-    "static/js/2.8c3ae9e1.chunk.js": "/static/js/2.8c3ae9e1.chunk.js",
-    "static/js/2.8c3ae9e1.chunk.js.map": "/static/js/2.8c3ae9e1.chunk.js.map",
+    "static/js/2.7cfd54e0.chunk.js": "/static/js/2.7cfd54e0.chunk.js",
+    "static/js/2.7cfd54e0.chunk.js.map": "/static/js/2.7cfd54e0.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.8c3ae9e1.chunk.js.LICENSE.txt": "/static/js/2.8c3ae9e1.chunk.js.LICENSE.txt",
+    "static/js/2.7cfd54e0.chunk.js.LICENSE.txt": "/static/js/2.7cfd54e0.chunk.js.LICENSE.txt",
+    "static/media/Introducao-ao-git-BB37395A-1.976e014d.jpg": "/static/media/Introducao-ao-git-BB37395A-1.976e014d.jpg",
+    "static/media/aceleracao-avanade-01C2F20A_page-0001.9dbdaf09.jpg": "/static/media/aceleracao-avanade-01C2F20A_page-0001.9dbdaf09.jpg",
+    "static/media/avancadas-reactjs-9691347F_page-0001.156e55a0.jpg": "/static/media/avancadas-reactjs-9691347F_page-0001.156e55a0.jpg",
+    "static/media/componentes-reactjs-A54CE508_page-0001.7c5cdd18.jpg": "/static/media/componentes-reactjs-A54CE508_page-0001.7c5cdd18.jpg",
     "static/media/css3.02d225c7.png": "/static/media/css3.02d225c7.png",
+    "static/media/html-css-js-DVWBDTV17HT21165.c9bb10e5.png": "/static/media/html-css-js-DVWBDTV17HT21165.c9bb10e5.png",
     "static/media/html5.a92a549a.png": "/static/media/html5.a92a549a.png",
+    "static/media/introducao-html5-css3-0C364E8E-1.fb651b2f.jpg": "/static/media/introducao-html5-css3-0C364E8E-1.fb651b2f.jpg",
     "static/media/javascript.38323140.png": "/static/media/javascript.38323140.png",
     "static/media/linux.c98b4558.png": "/static/media/linux.c98b4558.png",
+    "static/media/logica-de-programacao-essencial-1D90D0DC-1.f547f1b2.jpg": "/static/media/logica-de-programacao-essencial-1D90D0DC-1.f547f1b2.jpg",
     "static/media/nodejs.007e99f6.png": "/static/media/nodejs.007e99f6.png",
     "static/media/reactjs.86c8d9eb.png": "/static/media/reactjs.86c8d9eb.png",
     "static/media/scrum.468dc316.png": "/static/media/scrum.468dc316.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5ea80dd8.js",
-    "static/js/2.8c3ae9e1.chunk.js",
-    "static/js/main.3b72edda.chunk.js"
+    "static/js/2.7cfd54e0.chunk.js",
+    "static/js/main.efb372e5.chunk.js"
   ]
 }
