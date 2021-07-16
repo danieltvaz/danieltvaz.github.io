@@ -6,14 +6,14 @@ const Wrapper = styled.div`
   height: 64px;
   justify-content: space-around;
   background: ${({ theme }) => theme.foreground};
-  padding: 0 30px;
+  padding: 0 20px;
   position: sticky;
   top: 0;
   left: 0;
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     justify-content: space-between;
-    padding: 0 5px;
+    padding: none;
   }
 `;
 

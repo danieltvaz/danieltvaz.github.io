@@ -35,6 +35,9 @@ const GridItem = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding: none;
+  }
 `;
 
 const SkillName = styled.h3`

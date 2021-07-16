@@ -5,6 +5,7 @@ const Wrapper = styled.div`
   /* border: 1px solid blue; */
   width: 1024px;
   margin: auto;
+
   flex: 1;
   align-items: center;
   justify-content: space-between;
@@ -15,11 +16,11 @@ const Wrapper = styled.div`
 `;
 
 const Photo = styled.img`
-  width: 300px;
-  flex: 1;
+  width: 200px;
   border-radius: 10px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     max-width: 35%;
+    margin: 10px 0;
   }
 `;
 

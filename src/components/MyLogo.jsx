@@ -37,8 +37,11 @@ const MyName = styled.h1`
   font-weight: 400;
   margin: 0 5px;
   display: inline-block;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    font-size: 32px;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    font-size: 26px;
   }
 `;
 

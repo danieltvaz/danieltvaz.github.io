@@ -8,6 +8,7 @@ export default function About() {
   return (
     <ContentWrapper>
       <Title>Seja bem vindo ao meu portfólio</Title>
+
       <MyAvatar>
         <SectionParagraph>
           Desenvolvedor Web Frontend, fiz meus primeiros códigos utilizando o
