@@ -15,9 +15,8 @@ export default function About() {
           bash do Windows, automatizando pequenas tarefas quando tinha 12 anos.
           Ao chegar a fase adulta, decidi seguir meu sonho de desenvolver
           software para Web e aqui estou. Gosto de estudar novas tecnologias e
-          aprimorar as que já domino. Estou buscando minha primeira vaga no
-          mercado de tecnologia, para construir coisas reais com pessoas legais,
-          colaborar com um time e fazer parte de algo que agrega valor.
+          aprimorar as que já domino. Atualmente trabalho principalmente com
+          ReactJS e suas bibliotecas.
         </SectionParagraph>
       </MyAvatar>
     </ContentWrapper>
