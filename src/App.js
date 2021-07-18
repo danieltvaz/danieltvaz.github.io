@@ -13,16 +13,21 @@ const AppWrapper = styled.div`
   flex-direction: column;
 `;
 
-const TestButton = styled.button`
-  position: fixed;
-`;
+const arr = ["daniel", "marcelly"];
+function teste(arr) {
+  const conversor = arr.map((item) => item.length);
+  const largest = Math.max(...conversor);
+  const index = conversor.findIndex((item) => item === largest);
+
+  return arr[index];
+}
+teste(arr);
 
 function App() {
   return (
     <>
       <Theme>
         <GlobalStyle />
-        <TestButton>Testar</TestButton>
         <SideBar />
         <AppWrapper>
           <Element name="about">
