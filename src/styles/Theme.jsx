@@ -10,7 +10,7 @@ const colors = {
   dark: {
     highlight: "#00aeed",
     text: "#ffffff",
-    foreground: "#000000",
+    foreground: "#333333",
     background: "#3b3b3b",
   },
 };

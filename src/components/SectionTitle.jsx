@@ -8,13 +8,16 @@ const Title = styled.h3`
   border-bottom: 2px solid ${({ theme }) => theme.highlight};
   width: 12vmax;
   text-align: center;
-  margin: 0 auto 5vmax auto;
+  margin: 0 auto 3vmax auto;
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    margin: 0 auto 5vmax auto;
+  }
 `;
 
-export default function SectionTitle({ title }) {
+export default function SectionTitle({ children }) {
   return (
     <Wrapper>
-      <Title>{title}</Title>
+      <Title>{children}</Title>
     </Wrapper>
   );
 }

@@ -7,8 +7,8 @@ const Wrapper = styled.div`
   background: ${({ theme }) => theme.background};
   padding: 5vmax;
   @media screen and (min-width: 320px) and (max-width: 1023px) {
-    margin-left: 15.5vmax;
-    padding: 5vmax 0 5vmax 5vmax;
+    margin-left: 0;
+    padding: 3vmax 1vmax 4vmax 1vmax;
   }
 `;
 
