@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   text-align: right;
-  position: relative;
+  position: absolute;
   top: 70vh;
   left: 50%;
   transform: translate(-50%, -50%);

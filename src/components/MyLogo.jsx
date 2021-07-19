@@ -12,7 +12,6 @@ const Logo = styled.img`
   width: 10vmax;
   border-radius: 50%;
   transition: all 0.5s;
-
   box-shadow: 0px 0px 5px ${({ theme }) => theme.highlight};
   &:hover {
     box-shadow: 0px 0px 15px ${({ theme }) => theme.highlight};

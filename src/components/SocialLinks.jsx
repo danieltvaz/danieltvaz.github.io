@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  position: relative;
+  position: absolute;
   top: 17vmax;
   /* border-bottom: 2px solid ${({ theme }) => theme.text}; */
   /* border: 1px solid red; */
