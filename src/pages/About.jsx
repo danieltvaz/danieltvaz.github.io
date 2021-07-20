@@ -5,7 +5,7 @@ import ContentWrapper from "../components/ContentBox";
 
 const Paragraph = styled.p`
   color: ${({ theme }) => theme.text};
-  font-size: 2vmax;
+  font-size: 1.5vmax;
   margin: 2vmax 0;
 `;
 

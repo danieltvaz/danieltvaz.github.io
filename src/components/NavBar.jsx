@@ -19,7 +19,8 @@ const Wrapper = styled.div`
 
 const StyledLink = styled(Link)`
   display: flex;
-  font-size: 2vmax;
+  /* font-size: 1.5vmax; */
+  font-size: 16px;
   color: ${({ theme }) => theme.text};
   margin: 10% 0;
   transition: all 0.2s;
@@ -41,12 +42,6 @@ const Icon = styled.img`
   }
 `;
 
-// const destinations = [
-//   { target: "about", name: "Sobre", icon: abouticon },
-//   { target: "skills", name: "Habilidades", icon: skillsicon },
-//   { target: "certificates", name: "Certificados", icon: certificatesicon },
-//   { target: "projects", name: "Projetos", icon: projectsicon },
-// ];
 const destinations = [
   { target: "about", name: "Sobre", icon: arrow },
   { target: "skills", name: "Habilidades", icon: arrow },
