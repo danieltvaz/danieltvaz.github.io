@@ -10,17 +10,8 @@ import Projects from "./pages/Projects";
 
 const AppWrapper = styled.div`
   display: flex;
+  overflow-x: hidden;
 `;
-
-const arr = ["daniel", "marcelly"];
-function teste(arr) {
-  const conversor = arr.map((item) => item.length);
-  const largest = Math.max(...conversor);
-  const index = conversor.findIndex((item) => item === largest);
-
-  return arr[index];
-}
-teste(arr);
 
 function App() {
   return (
