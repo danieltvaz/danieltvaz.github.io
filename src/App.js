@@ -10,7 +10,6 @@ import Projects from "./pages/Projects";
 
 const AppWrapper = styled.div`
   display: flex;
-  flex-direction: column;
 `;
 
 const arr = ["daniel", "marcelly"];
@@ -28,20 +27,23 @@ function App() {
     <>
       <Theme>
         <GlobalStyle />
-        <SideBar />
+
         <AppWrapper>
-          <Element name="about">
-            <About />
-          </Element>
-          <Element id="skills">
-            <Skills />
-          </Element>
-          <Element id="certificates">
-            <Certificates />
-          </Element>
-          <Element id="projects">
-            <Projects />
-          </Element>
+          <SideBar />
+          <div>
+            <Element name="about">
+              <About />
+            </Element>
+            <Element id="projects">
+              <Projects />
+            </Element>
+            <Element id="skills">
+              <Skills />
+            </Element>
+            <Element id="certificates">
+              <Certificates />
+            </Element>
+          </div>
         </AppWrapper>
       </Theme>
     </>

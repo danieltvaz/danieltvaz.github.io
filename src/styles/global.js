@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 }
 body{
     background: ${({ theme }) => theme.background};
+    font-family: 'Poppins', sans-serif;
 }
 
 div {

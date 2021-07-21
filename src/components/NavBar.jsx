@@ -1,57 +1,64 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faUser,
+  faCode,
+  faCertificate,
+  faLink,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
-import arrow from "../assets/rightarrow.png";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  text-align: right;
-  position: absolute;
-  top: 70vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  justify-content: space-around;
   @media screen and (min-width: 320px) and (max-width: 1023px) {
-    top: 40vh;
+    /* top: 40vh; */
   }
+`;
+
+const linkStyles = `display: flex;
+flex: 1;
+font-weight: 600;
+font-family: "Lato", sans-serif;
+transition: all 0.2s;
+border-bottom: 1px solid #4958bc;
+margin: 10px 0;
+padding-bottom: 15px;
+text-decoration: none;
+
+color: ${({ theme }) => theme.text};
+&:hover {
+  cursor: pointer;
+  color: ${({ theme }) => theme.highlight};
+}
+&.active {
+  /* border-bottom: 2px solid ${({ theme }) => theme.highlight}; */
+  color: ${({ theme }) => theme.activeLink};
+} `;
+
+const HtmlLink = styled.a`
+  ${linkStyles}
 `;
 
 const StyledLink = styled(Link)`
-  display: flex;
-  font-size: 2vmax;
-  color: ${({ theme }) => theme.text};
-  margin: 10% 0;
-  transition: all 0.2s;
-  &:hover {
-    cursor: pointer;
-    color: ${({ theme }) => theme.highlight};
-  }
-  &.active {
-    /* border-bottom: 2px solid ${({ theme }) => theme.highlight}; */
-    color: ${({ theme }) => theme.highlight};
-  }
+  ${linkStyles}
 `;
 
-const Icon = styled.img`
-  width: 2vmax;
-  margin-right: 1vmax;
-  @media screen and (min-width: 320px) and (max-width: 1023px) {
-    margin-right: 0.5vmax;
-  }
+const LinkName = styled.span`
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 15px;
+  color: ${({ theme }) => theme.navLink};
 `;
 
-// const destinations = [
-//   { target: "about", name: "Sobre", icon: abouticon },
-//   { target: "skills", name: "Habilidades", icon: skillsicon },
-//   { target: "certificates", name: "Certificados", icon: certificatesicon },
-//   { target: "projects", name: "Projetos", icon: projectsicon },
-// ];
 const destinations = [
-  { target: "about", name: "Sobre", icon: arrow },
-  { target: "skills", name: "Habilidades", icon: arrow },
-  { target: "certificates", name: "Certificados", icon: arrow },
-  { target: "projects", name: "Projetos", icon: arrow },
+  { target: "about", name: "Sobre", icon: faHome },
+  { target: "projects", name: "Projetos", icon: faCode },
+  { target: "skills", name: "Habilidades", icon: faUser },
+  { target: "certificates", name: "Certificados", icon: faCertificate },
 ];
 
 export default function NavBar() {
@@ -65,10 +72,18 @@ export default function NavBar() {
           spy={true}
           activeClass={"active"}
         >
-          <Icon src={destination.icon} alt="about" />
-          {destination.name}
+          <FontAwesomeIcon color="#44bef1" icon={destination.icon} />
+          <LinkName>{destination.name}</LinkName>
         </StyledLink>
       ))}
+      <HtmlLink href="https://linkedin.com/in/danieltvaz" target="_blank">
+        <FontAwesomeIcon color="#44bef1" icon={faLinkedin} />
+        <LinkName>LinkedIn</LinkName>
+      </HtmlLink>
+      <HtmlLink href="https://github.com/danieltvaz" target="_blank">
+        <FontAwesomeIcon color="#44bef1" icon={faGithub} />
+        <LinkName>GitHub</LinkName>
+      </HtmlLink>
     </Wrapper>
   );
 }
