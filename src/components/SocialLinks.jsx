@@ -23,10 +23,7 @@ const Wrapper = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  position: absolute;
-  top: 17vmax;
-  /* border-bottom: 2px solid ${({ theme }) => theme.text}; */
-  /* border: 1px solid red; */
+
   @media screen and (max-width: 280px) and (max-width: 319px) {
     top: 21vmax;
   }

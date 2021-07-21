@@ -3,9 +3,10 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   display: grid;
   gap: 3vmax;
-  grid-template-columns: repeat(3, minmax(auto, 10vmax));
-  margin: auto;
-  justify-content: center;
+  margin-top: 40px;
+  grid-template-columns: repeat(5, minmax(auto, 10vmax));
+  /* margin: auto; */
+  /* justify-content: center; */
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     grid-template-columns: repeat(2, minmax(auto, 15vmax));
     gap: 2vmax;
@@ -15,11 +16,11 @@ const GridItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 8vmax;
   border-radius: 10px;
   padding: 1vmax;
-  box-shadow: 2px 5px 10px ${({ theme }) => theme.foreground};
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     height: 12vmax;
   }

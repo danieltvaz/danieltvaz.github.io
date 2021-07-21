@@ -8,6 +8,7 @@ import logica from "../assets/certificates/logica-de-programacao-essencial-1D90D
 import reactjsavancado from "../assets/certificates/avancadas-reactjs-9691347F_page-0001.jpg";
 import reactcomponents from "../assets/certificates/componentes-reactjs-A54CE508_page-0001.jpg";
 import avanade from "../assets/certificates/aceleracao-avanade-01C2F20A_page-0001.jpg";
+import SectionTitle from "../components/SectionTitle";
 
 const data = [
   {
@@ -35,6 +36,7 @@ const data = [
 export default function Certificates() {
   return (
     <Section>
+      <SectionTitle>Certificados</SectionTitle>
       <Grid data={data} />
     </Section>
   );
