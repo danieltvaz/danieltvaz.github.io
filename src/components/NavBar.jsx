@@ -5,7 +5,6 @@ import {
   faUser,
   faCode,
   faCertificate,
-  faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -13,37 +12,55 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 320px) and (max-width: 1023px) {
-    /* top: 40vh; */
+`;
+
+// const linkStyles = `display: flex;
+// flex: 1;
+// font-weight: 600;
+// font-family: "Lato", sans-serif;
+// transition: all 0.2s;
+// border-bottom: 1px solid #4958bc;
+// margin: 10px 0;
+// padding-bottom: 15px;
+// text-decoration: none;
+// &.active &span {
+//   color: ${({ theme }) => theme.activeLink};
+
+// }
+
+//  `;
+
+const HtmlLink = styled.a`
+  display: flex;
+  flex: 1;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  transition: all 0.2s;
+  border-bottom: 1px solid #4958bc;
+  margin: 10px 0;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: ${({ theme }) => theme.navLink};
+  &.hover {
+    color: ${({ theme }) => theme.activeLink};
   }
 `;
 
-const linkStyles = `display: flex;
-flex: 1;
-font-weight: 600;
-font-family: "Lato", sans-serif;
-transition: all 0.2s;
-border-bottom: 1px solid #4958bc;
-margin: 10px 0;
-padding-bottom: 15px;
-text-decoration: none;
-
-color: ${({ theme }) => theme.text};
-&:hover {
-  cursor: pointer;
-  color: ${({ theme }) => theme.highlight};
-}
-&.active {
-  /* border-bottom: 2px solid ${({ theme }) => theme.highlight}; */
-  color: ${({ theme }) => theme.activeLink};
-} `;
-
-const HtmlLink = styled.a`
-  ${linkStyles}
-`;
-
 const StyledLink = styled(Link)`
-  ${linkStyles}
+  display: flex;
+  flex: 1;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  transition: all 0.2s;
+  border-bottom: 1px solid #4958bc;
+  margin: 10px 0;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: ${({ theme }) => theme.navLink};
+
+  &.active {
+    color: ${({ theme }) => theme.activeLink};
+  }
 `;
 
 const LinkName = styled.span`
@@ -51,7 +68,10 @@ const LinkName = styled.span`
   font-weight: 400;
   display: inline-block;
   margin-left: 15px;
-  color: ${({ theme }) => theme.navLink};
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.activeLink};
+  }
 `;
 
 const destinations = [
@@ -70,7 +90,7 @@ export default function NavBar() {
           to={destination.target}
           smooth={true}
           spy={true}
-          activeClass={"active"}
+          activeClass="active"
         >
           <FontAwesomeIcon color="#44bef1" icon={destination.icon} />
           <LinkName>{destination.name}</LinkName>
