@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   display: grid;
-  gap: 3vmax;
+  gap: 43px;
   margin-top: 40px;
-  grid-template-columns: repeat(5, minmax(auto, 10vmax));
+  grid-template-columns: repeat(5, minmax(auto, 150px));
   /* margin: auto; */
   /* justify-content: center; */
   @media screen and (min-width: 320px) and (max-width: 1023px) {
-    grid-template-columns: repeat(2, minmax(auto, 15vmax));
-    gap: 2vmax;
+    grid-template-columns: repeat(3, minmax(auto, 110px));
+    gap: 15px;
   }
 `;
 const GridItem = styled.div`
@@ -46,7 +46,7 @@ const Title = styled.p`
 export default function Grid({ data }) {
   return (
     <Wrapper>
-      {data.map((data, index) => (
+      {data?.map((data, index) => (
         <GridItem key={index}>
           <Img src={data.icon} />
           <Title>{data.name}</Title>
