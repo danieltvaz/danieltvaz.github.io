@@ -9,7 +9,6 @@ import reactjsavancado from "../assets/certificates/avancadas-reactjs-9691347F_p
 import reactcomponents from "../assets/certificates/componentes-reactjs-A54CE508_page-0001.jpg";
 import avanade from "../assets/certificates/aceleracao-avanade-01C2F20A_page-0001.jpg";
 import SectionTitle from "../components/SectionTitle";
-import ImpactText from "../components/ImpactText";
 
 const data = [
   {

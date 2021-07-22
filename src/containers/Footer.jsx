@@ -19,7 +19,7 @@ const Text = styled.p`
   }
 `;
 
-export default function () {
+export default function Footer() {
   return (
     <Wrapper>
       <Text>

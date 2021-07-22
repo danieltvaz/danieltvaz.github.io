@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ImpactText from "../components/ImpactText";
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 
