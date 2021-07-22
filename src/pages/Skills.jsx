@@ -1,4 +1,5 @@
 import Grid from "../components/Grid";
+import ImpactText from "../components/ImpactText";
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 import htmlIcon from "../assets/skills/html5.png";
@@ -57,6 +58,9 @@ export default function Skills() {
     <Section>
       <SectionTitle>Habilidades</SectionTitle>
       <Grid data={skillsData} />
+      <ImpactText>
+        "A persistência é o melhor caminho do êxito." <br /> Charles Chaplin.
+      </ImpactText>
     </Section>
   );
 }

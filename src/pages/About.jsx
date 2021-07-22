@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ImpactText from "../components/ImpactText";
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 
@@ -25,6 +26,11 @@ export default function About() {
         desde criança, quando desenhava teclados na caixa de sapatos da minha
         mãe para brincar de programador.
       </Paragraph>
+      <ImpactText>
+        "Quem conhece os outros é sábio; Quem conhece a si mesmo é iluminado."
+        <br />
+        Lao-Tsé
+      </ImpactText>
     </Section>
   );
 }
