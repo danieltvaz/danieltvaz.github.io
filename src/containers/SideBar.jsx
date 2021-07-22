@@ -46,8 +46,11 @@ const OverflowContent = styled.div`
   height: 100vh;
   z-index: 1;
   /* margin-left: 270px; */
-  opacity: ${({ isOpen }) => (isOpen ? "0.5" : "0")};
-  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  visibility: hidden;
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    opacity: ${({ isOpen }) => (isOpen ? "0.5" : "0")};
+    visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  }
   /* z-index: -1; */
 `;
 
@@ -82,7 +85,10 @@ export default function SideBar() {
           <NavBar />
         </ContentWrapper>
       </HeaderWrapper>
-      <OverflowContent onClick={()=>setIsOpen(state=>!state)} isOpen={isOpen}></OverflowContent>
+      <OverflowContent
+        onClick={() => setIsOpen((state) => !state)}
+        isOpen={isOpen}
+      ></OverflowContent>
     </>
   );
 }
