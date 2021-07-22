@@ -25,6 +25,7 @@ const MyName = styled.h1`
   line-break: loose;
   margin: 0;
   font-size: 24px;
+  color: ${({ theme }) => theme.whiteText};
 `;
 
 const Title = styled.h2`
@@ -38,7 +39,10 @@ const Title = styled.h2`
 export default function MyLogo() {
   return (
     <LogoWrapper>
-      <Logo src={"https://avatars.githubusercontent.com/u/73543926?v=4"} />
+      <Logo
+        src={"https://avatars.githubusercontent.com/u/73543926?v=4"}
+        draggable="false"
+      />
       <MyName>Daniel Tostes</MyName>
       <Title>Web Developer</Title>
     </LogoWrapper>
