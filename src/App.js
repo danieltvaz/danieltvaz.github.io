@@ -18,7 +18,6 @@ function App() {
     <>
       <Theme>
         <GlobalStyle />
-
         <AppWrapper>
           <SideBar />
           <div>
