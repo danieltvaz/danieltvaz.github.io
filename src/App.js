@@ -1,4 +1,5 @@
 import { Element } from "react-scroll";
+import Footer from "./containers/Footer";
 import Theme from "./styles/Theme";
 import SideBar from "./containers/SideBar";
 import GlobalStyle from "./styles/global";
@@ -33,6 +34,7 @@ function App() {
             <Element id="certificates">
               <Certificates />
             </Element>
+            <Footer />  
           </div>
         </AppWrapper>
       </Theme>
