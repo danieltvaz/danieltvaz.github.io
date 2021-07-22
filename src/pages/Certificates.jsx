@@ -39,11 +39,6 @@ export default function Certificates() {
     <Section>
       <SectionTitle>Certificados</SectionTitle>
       <Grid data={data} />
-      <ImpactText>
-        "O lucro do nosso estudo é tornarmo-nos melhores e mais sábios."
-        <br />
-        Michel de Montaigne
-      </ImpactText>
     </Section>
   );
 }
