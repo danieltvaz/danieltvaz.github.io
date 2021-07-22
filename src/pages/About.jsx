@@ -20,17 +20,9 @@ export default function About() {
         novas tecnologias e aprimorar o que já domino.
       </Paragraph>
       <Paragraph>
-        Sou prático para resolver problemas e gosto de desafios. Tenho boa
-        interação com pessoas dentro e fora do local de trabalho e tenho muita
-        facilidade em fazer amizades e amo isso. Sou entusiasta da tecnologia
-        desde criança, quando desenhava teclados na caixa de sapatos da minha
-        mãe para brincar de programador.
+        Utilizo HTML, CSS, JavaScript e ReactJS para construir interfaces
+        responsivas e com as melhores praticas do mercado.
       </Paragraph>
-      <ImpactText>
-        "Quem conhece os outros é sábio; Quem conhece a si mesmo é iluminado."
-        <br />
-        Lao-Tsé
-      </ImpactText>
     </Section>
   );
 }
