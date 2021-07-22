@@ -4,6 +4,7 @@ const colors = {
   light: {
     highlight: "#44bef1",
     text: "#212121",
+    whiteText: "#fafafa",
     navLink: "#aeb5de",
     activeLink: "#fff9fa",
     foreground: "#3445b4",
