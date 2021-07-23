@@ -2,20 +2,20 @@ import { useState, useEffect, useCallback } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  font-size: 2.2vmax;
+  font-size: 16px;
   margin-bottom: 3vmax;
 `;
 
 const Strong = styled.span`
   color: ${({ theme }) => theme.highlight};
-  font-size: 2.5.vmax;
+  font-size: 24px;
   text-transform: uppercase;
 `;
 
 const Strongest = styled.span`
-  color: ${({ theme }) => theme.highlight};
+  color: ${({ theme }) => theme.foreground};
   border-bottom: 1px solid ${({ theme }) => theme.highlight};
-  font-size: 2.8vmax;
+  font-size: 28px;
   text-transform: uppercase;
 `;
 
@@ -50,7 +50,8 @@ export default function ColoredApresentation({ children }) {
   }, []);
 
   useEffect(() => {
-    PersonalizeText(children);
+    children && PersonalizeText(children);
   }, []);
+
   return <Wrapper>{text}</Wrapper>;
 }
