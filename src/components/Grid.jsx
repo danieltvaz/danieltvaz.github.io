@@ -1,14 +1,36 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { useState } from "react";
+
+const ModalAnimationDesktop = keyframes`
+from{
+  opacity: 0;
+  width: 0;
+}
+to{
+  opacity: 1;
+  width: 100%;
+}
+`;
+const ModalAnimationMobile = keyframes`
+from{
+  opacity: 0;
+  width: 0;
+}
+to{
+  opacity: 1;
+  width: 100vw;
+}
+`;
 
 const Wrapper = styled.div`
   display: grid;
   gap: 43px;
   margin-top: 40px;
   grid-template-columns: repeat(5, minmax(100px, 150px));
-  grid-template-rows: repeat(auto, minmax(100px, 150px));
+  grid-template-rows: repeat(2, minmax(100px, 150px));
   @media screen and (min-width: 320px) and (max-width: 1023px) {
-    grid-template-columns: repeat(3, minmax(110px, 110px));
-    grid-template-rows: repeat(4, minmax(110px, 110px));
+    grid-template-columns: repeat(3, minmax(50px, 110px));
+    grid-template-rows: repeat(4, minmax(50px, 110px));
     gap: 15px;
   }
 `;
@@ -33,21 +55,70 @@ const Title = styled.p`
   text-align: center;
   text-transform: uppercase;
   color: ${({ theme }) => theme.text};
-  font-size: 20px;
+  font-size: 16px;
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     font-size: 10px;
   }
 `;
 
-export default function Grid({ data }) {
+const OutFocus = styled.div`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  background: black;
+`;
+
+const Modal = styled.div`
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  align-items: center;
+  background: transparent;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  img {
+    width: 100%;
+    z-index: 2;
+    user-select: none;
+    border-radius: 10px;
+    animation: ${ModalAnimationDesktop} 0.5s;
+    @media screen and (min-width: 320px) and (max-width: 1023px) {
+      width: 100vw;
+      animation: ${ModalAnimationMobile} 0.5s;
+    }
+  }
+`;
+
+export default function Grid({ data, option }) {
+  const [modal, setModal] = useState(false);
+
   return (
     <Wrapper>
       {data?.map((data, index) => (
-        <GridItem key={index}>
+        <GridItem key={index} onClick={() => setModal(data.icon)}>
           <Img src={data.icon} />
           <Title>{data.name}</Title>
         </GridItem>
       ))}
+      {modal && option && (
+        <>
+          <OutFocus onClick={() => setModal(false)}></OutFocus>
+          <Modal>
+            <img
+              modal={modal}
+              src={modal}
+              alt="certificate"
+              draggable="false"
+            />
+          </Modal>
+        </>
+      )}
     </Wrapper>
   );
 }
