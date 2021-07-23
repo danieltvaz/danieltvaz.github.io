@@ -6,11 +6,11 @@ import styled from "styled-components";
 import NavBar from "../components/NavBar";
 import MyLogo from "../components/MyLogo";
 
-const HeaderWrapper = styled.div`
+const HeaderWrapper = styled.aside`
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: 999;
+  z-index: 2;
   min-width: 270px;
   max-width: 270px;
   min-height: 100vh;
