@@ -24,7 +24,7 @@ export default function Projects() {
         "É preciso um trabalho duro e uma grande vontade para transformar a
         paixão numa virtude."
         <br />
-        Frank Lloyd Wright
+        Frank Lloyd Wright.
       </ImpactText>
     </Section>
   );
