@@ -34,7 +34,7 @@ function App() {
             <Element id="certificates">
               <Certificates />
             </Element>
-            <Footer />  
+            <Footer />
           </div>
         </AppWrapper>
       </Theme>
