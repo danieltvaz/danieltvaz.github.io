@@ -37,7 +37,7 @@ export default function Certificates() {
   return (
     <Section>
       <SectionTitle>Certificados</SectionTitle>
-      <Grid data={data} />
+      <Grid data={data} option />
     </Section>
   );
 }
