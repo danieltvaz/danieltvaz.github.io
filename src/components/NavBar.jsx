@@ -9,26 +9,10 @@ import {
 import { Link } from "react-scroll";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Wrapper = styled.div`
+const Wrapper = styled.nav`
   display: flex;
   flex-direction: column;
 `;
-
-// const linkStyles = `display: flex;
-// flex: 1;
-// font-weight: 600;
-// font-family: "Lato", sans-serif;
-// transition: all 0.2s;
-// border-bottom: 1px solid #4958bc;
-// margin: 10px 0;
-// padding-bottom: 15px;
-// text-decoration: none;
-// &.active &span {
-//   color: ${({ theme }) => theme.activeLink};
-
-// }
-
-//  `;
 
 const HtmlLink = styled.a`
   display: flex;
@@ -90,6 +74,7 @@ export default function NavBar() {
           to={destination.target}
           smooth={true}
           spy={true}
+          spyThrottle={500}
           activeClass="active"
         >
           <FontAwesomeIcon color="#44bef1" icon={destination.icon} />
