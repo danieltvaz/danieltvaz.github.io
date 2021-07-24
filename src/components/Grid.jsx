@@ -44,10 +44,12 @@ const GridItem = styled.div`
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 `;
 const Img = styled.img`
-  width: 100px;
+  width: ${({ optionName }) => (optionName ? "100px" : "100%")};
+  margin: ${({ optionName }) => (optionName ? "" : "auto")};
 
   @media screen and (min-width: 320px) and (max-width: 1023px) {
-    width: 50px;
+    width: ${({ optionName }) => (optionName ? "50px" : "100%")};
+    margin: ${({ optionName }) => (optionName ? "" : "auto")};
   }
 `;
 
@@ -95,27 +97,22 @@ const Modal = styled.div`
   }
 `;
 
-export default function Grid({ data, option }) {
+export default function Grid({ data, optionModal, optionName }) {
   const [modal, setModal] = useState(false);
 
   return (
     <Wrapper>
       {data?.map((data, index) => (
         <GridItem key={index} onClick={() => setModal(data.icon)}>
-          <Img src={data.icon} />
-          <Title>{data.name}</Title>
+          <Img src={data.icon} optionName={optionName} />
+          {optionName ? <Title>{data.name}</Title> : ""}
         </GridItem>
       ))}
-      {modal && option && (
+      {modal && optionModal && (
         <>
           <OutFocus onClick={() => setModal(false)}></OutFocus>
           <Modal>
-            <img
-              modal={modal}
-              src={modal}
-              alt="certificate"
-              draggable="false"
-            />
+            <img modal={modal} src={modal} alt={data.name} draggable="false" />
           </Modal>
         </>
       )}

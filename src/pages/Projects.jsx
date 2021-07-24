@@ -19,7 +19,7 @@ export default function Projects() {
   return (
     <Section>
       <SectionTitle>Projetos</SectionTitle>
-      <Grid data={data} />
+      <Grid optionName data={data} />
       <ImpactText>
         "É preciso um trabalho duro e uma grande vontade para transformar a
         paixão numa virtude."
