@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faTimes,
+  faSun,
+  faMoon,
+} from "@fortawesome/free-solid-svg-icons";
 
 import styled from "styled-components";
 import NavBar from "../components/NavBar";
@@ -15,7 +20,7 @@ const HeaderWrapper = styled.aside`
   max-width: 270px;
   min-height: 100vh;
   padding: 30px 0 0 40px;
-  transition: all 0.5s linear;
+  transition: margin 0.5s linear;
   background: ${({ theme }) => theme.foreground};
   margin-left: ${({ isOpen }) => (isOpen ? "0" : "-270px")};
   color: ${({ theme }) => theme.text};
@@ -28,7 +33,7 @@ const HeaderWrapper = styled.aside`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   transform: rotate(135deg);
-  color: ${({ theme }) => theme.whiteText};
+  color: #fafafa;
   top: 5px;
   left: 40px;
   position: absolute;
@@ -45,13 +50,11 @@ const OverflowContent = styled.div`
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  /* margin-left: 270px; */
+
   visibility: hidden;
   @media screen and (min-width: 320px) and (max-width: 1023px) {
-    opacity: ${({ isOpen }) => (isOpen ? "0.5" : "0")};
     visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
   }
-  /* z-index: -1; */
 `;
 
 const Button = styled.span`
@@ -59,6 +62,7 @@ const Button = styled.span`
   height: 60px;
   display: block;
   position: absolute;
+  z-index: -1;
   left: 190px;
   top: -10px;
   transform: rotate(45deg);
@@ -70,7 +74,18 @@ const Button = styled.span`
   user-select: none;
 `;
 
-export default function SideBar() {
+const DarkModeButton = styled.div`
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  path {
+    color: #fafafa;
+    font-size: 24px;
+    justify-self: center;
+  }
+`;
+
+export default function SideBar({ setDarkMode, darkMode }) {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
@@ -78,11 +93,17 @@ export default function SideBar() {
       <HeaderWrapper isOpen={isOpen}>
         <ContentWrapper>
           <Button onClick={() => setIsOpen((state) => !state)}>
-            <StyledIcon icon={faBars} />
+            <StyledIcon icon={isOpen ? faTimes : faBars} />
           </Button>
 
           <MyLogo />
+
           <NavBar />
+          <div>
+            <DarkModeButton onClick={() => setDarkMode((state) => !state)}>
+              <FontAwesomeIcon icon={!darkMode ? faSun : faMoon} />
+            </DarkModeButton>
+          </div>
         </ContentWrapper>
       </HeaderWrapper>
       <OverflowContent
