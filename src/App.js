@@ -1,3 +1,4 @@
+import useDarkMode from "./hooks/useDarkMode";
 import { Element } from "react-scroll";
 import Footer from "./containers/Footer";
 import Theme from "./styles/Theme";
@@ -15,12 +16,13 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
+  const { darkMode, setDarkMode } = useDarkMode();
   return (
     <>
-      <Theme>
+      <Theme darkMode={darkMode}>
         <GlobalStyle />
         <AppWrapper>
-          <SideBar />
+          <SideBar setDarkMode={setDarkMode} darkMode={darkMode} />
           <div>
             <Element name="about">
               <About />

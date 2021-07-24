@@ -12,6 +12,8 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 const Wrapper = styled.nav`
   display: flex;
   flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 80px;
 `;
 
 const HtmlLink = styled.a`
