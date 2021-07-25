@@ -76,6 +76,7 @@ const Button = styled.span`
 
 const DarkModeButton = styled.div`
   display: flex;
+  margin: 20px 0;
   justify-content: center;
   cursor: pointer;
   path {

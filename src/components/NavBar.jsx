@@ -13,10 +13,9 @@ const Wrapper = styled.nav`
   display: flex;
   flex-direction: column;
   margin-top: 120px;
-  margin-bottom: 80px;
+
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     margin-top: 60px;
-    margin-bottom: 30px;
   }
 `;
 
