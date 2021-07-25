@@ -18,7 +18,7 @@ const colors = {
     invertText: "#212121",
     navLink: "#aeb5de",
     activeLink: "#fff9fa",
-    foreground: "#333333",
+    foreground: "#0d1140",
     background: "#3b3b3b",
   },
 };
