@@ -36,12 +36,19 @@ const Wrapper = styled.div`
 `;
 const GridItem = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: box-shadow 0.5s;
+  width: auto;
+
+  &:hover {
+    box-shadow: ${({ optionModal }) => (optionModal ? "1px 1px 20px 2px #3445b4" : null)};
+  }
 `;
 const Img = styled.img`
   width: ${({ optionName }) => (optionName ? "100px" : "100%")};
@@ -103,11 +110,12 @@ export default function Grid({ data, optionModal, optionName }) {
   return (
     <Wrapper>
       {data?.map((data, index) => (
-        <GridItem key={index} onClick={() => setModal(data.icon)}>
+        <GridItem key={index} onClick={() => setModal(data.icon)} optionModal={optionModal}>
           <Img src={data.icon} optionName={optionName} />
           {optionName ? <Title>{data.name}</Title> : ""}
         </GridItem>
       ))}
+
       {modal && optionModal && (
         <>
           <OutFocus onClick={() => setModal(false)}></OutFocus>

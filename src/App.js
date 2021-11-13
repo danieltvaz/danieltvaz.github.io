@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Certificates from "./pages/Certificates";
 import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
 
 const AppWrapper = styled.div`
   display: flex;
@@ -32,6 +33,9 @@ function App() {
             </Element>
             <Element id="skills">
               <Skills />
+            </Element>
+            <Element id="experience">
+              <Experience />
             </Element>
             <Element id="certificates">
               <Certificates />

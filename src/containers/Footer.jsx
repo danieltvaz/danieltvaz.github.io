@@ -3,6 +3,10 @@ import styled from "styled-components";
 const Wrapper = styled.footer`
   display: flex;
   align-items: center;
+  position: absolute;
+  top: ${() => document.body.offsetHeight + "px"};
+  left: 0;
+  width: 100%;
   justify-content: center;
   height: 48px;
   background: ${({ theme }) => theme.foreground};
@@ -22,9 +26,7 @@ const Text = styled.p`
 export default function Footer() {
   return (
     <Wrapper>
-      <Text>
-        Desenvolvido por Daniel Tostes @ 2021 - Todos os direitos reservados
-      </Text>
+      <Text>Desenvolvido por Daniel Tostes @ 2021 - Todos os direitos reservados</Text>
     </Wrapper>
   );
 }

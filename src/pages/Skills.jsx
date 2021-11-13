@@ -11,6 +11,8 @@ import gitIcon from "../assets/skills/git.png";
 import nodejsIcon from "../assets/skills/nodejs.png";
 import scrumIcon from "../assets/skills/scrum.png";
 import linuxIcon from "../assets/skills/linux.png";
+import vueIcon from "../assets/skills/vue.png";
+import sassIcon from "../assets/skills/sass.png";
 
 const skillsData = [
   {
@@ -25,6 +27,10 @@ const skillsData = [
     name: "javascript",
     icon: javascriptIcon,
   },
+  {
+    name: "VueJS",
+    icon: vueIcon,
+  },
 
   {
     name: "react",
@@ -33,6 +39,10 @@ const skillsData = [
   {
     name: "styled components",
     icon: styledcomponentsIcon,
+  },
+  {
+    name: "Sass",
+    icon: sassIcon,
   },
 
   {

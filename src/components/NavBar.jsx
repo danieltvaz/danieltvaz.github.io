@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faUser,
-  faCode,
-  faCertificate,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUser, faCode, faCertificate, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -67,6 +62,7 @@ const destinations = [
   { target: "about", name: "Sobre", icon: faHome },
   { target: "projects", name: "Projetos", icon: faCode },
   { target: "skills", name: "Habilidades", icon: faUser },
+  { target: "experience", name: "Experiência", icon: faBriefcase },
   { target: "certificates", name: "Certificados", icon: faCertificate },
 ];
 
@@ -74,14 +70,7 @@ export default function NavBar() {
   return (
     <Wrapper>
       {destinations.map((destination, index) => (
-        <StyledLink
-          key={index}
-          to={destination.target}
-          smooth={true}
-          spy={true}
-          spyThrottle={500}
-          activeClass="active"
-        >
+        <StyledLink key={index} to={destination.target} smooth={true} spy={true} spyThrottle={500} activeClass="active">
           <FontAwesomeIcon color="#44bef1" icon={destination.icon} />
           <LinkName>{destination.name}</LinkName>
         </StyledLink>
