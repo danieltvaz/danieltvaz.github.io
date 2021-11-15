@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import { useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useState, useEffect } from "react";
 
 const Wrapper = styled.footer`
   display: flex;
   align-items: center;
   position: absolute;
-  top: ${({ pageHeight }) => pageHeight + "px"};
+  top: ${({ pageHeight }) => `${pageHeight}px`};
   left: 0;
   width: 100%;
   justify-content: center;
@@ -31,6 +30,7 @@ export default function Footer() {
   useEffect(() => {
     setPageHeight(document.body.offsetHeight);
   }, []);
+
   return (
     <Wrapper pageHeight={pageHeight}>
       <Text>Desenvolvido por Daniel Tostes @ 2021 - Todos os direitos reservados</Text>
