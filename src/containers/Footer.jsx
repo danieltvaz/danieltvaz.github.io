@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import { useState } from "react";
+import { useEffect } from "react/cjs/react.development";
 
 const Wrapper = styled.footer`
   display: flex;
   align-items: center;
   position: absolute;
-  top: ${() => document.body.offsetHeight + "px"};
+  top: ${({ pageHeight }) => pageHeight + "px"};
   left: 0;
   width: 100%;
   justify-content: center;
@@ -24,8 +26,13 @@ const Text = styled.p`
 `;
 
 export default function Footer() {
+  const [pageHeight, setPageHeight] = useState(0);
+
+  useEffect(() => {
+    setPageHeight(document.body.offsetHeight);
+  }, []);
   return (
-    <Wrapper>
+    <Wrapper pageHeight={pageHeight}>
       <Text>Desenvolvido por Daniel Tostes @ 2021 - Todos os direitos reservados</Text>
     </Wrapper>
   );
