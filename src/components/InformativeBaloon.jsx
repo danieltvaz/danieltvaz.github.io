@@ -8,6 +8,7 @@ const Baloon = styled.div`
   padding: 10px 20px;
   position: relative;
   margin-bottom: 20px;
+  max-width: 750px;
 
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     margin-top: 100px;
@@ -53,7 +54,7 @@ const BaloonIcon = styled.img`
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     width: 140px;
     position: absolute;
-    top: -20%;
+    top: -30%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
