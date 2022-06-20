@@ -111,8 +111,17 @@ export default function Grid({ data, optionModal, optionName }) {
     <Wrapper>
       {data?.map((data, index) => (
         <GridItem key={index} onClick={() => setModal(data.icon)} optionModal={optionModal}>
-          <Img src={data.icon} optionName={optionName} />
-          {optionName ? <Title>{data.name}</Title> : ""}
+          {data.link ? (
+            <a href={data.link} target="blank" alt={`${data.name} image`}>
+              <Img src={data.icon} optionName={optionName} />
+              {optionName ? <Title>{data.name}</Title> : ""}
+            </a>
+          ) : (
+            <>
+              <Img src={data.icon} optionName={optionName} />
+              {optionName ? <Title>{data.name}</Title> : ""}
+            </>
+          )}
         </GridItem>
       ))}
 
