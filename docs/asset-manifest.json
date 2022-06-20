@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.96278bbc.chunk.js",
-    "main.js.map": "/static/js/main.96278bbc.chunk.js.map",
+    "main.js": "/static/js/main.a45033ec.chunk.js",
+    "main.js.map": "/static/js/main.a45033ec.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f027f2bf.js",
     "runtime-main.js.map": "/static/js/runtime-main.f027f2bf.js.map",
     "static/js/2.fb89a4e0.chunk.js": "/static/js/2.fb89a4e0.chunk.js",
@@ -11,6 +11,7 @@
     "static/media/Introducao-ao-git-BB37395A-1.976e014d.jpg": "/static/media/Introducao-ao-git-BB37395A-1.976e014d.jpg",
     "static/media/aceleracao-avanade-01C2F20A_page-0001.9dbdaf09.jpg": "/static/media/aceleracao-avanade-01C2F20A_page-0001.9dbdaf09.jpg",
     "static/media/avancadas-reactjs-9691347F_page-0001.156e55a0.jpg": "/static/media/avancadas-reactjs-9691347F_page-0001.156e55a0.jpg",
+    "static/media/avaplus.5ecb5ca9.png": "/static/media/avaplus.5ecb5ca9.png",
     "static/media/componentes-reactjs-A54CE508_page-0001.7c5cdd18.jpg": "/static/media/componentes-reactjs-A54CE508_page-0001.7c5cdd18.jpg",
     "static/media/css3.02d225c7.png": "/static/media/css3.02d225c7.png",
     "static/media/git.49e5fb7e.png": "/static/media/git.49e5fb7e.png",
@@ -30,6 +31,6 @@
   "entrypoints": [
     "static/js/runtime-main.f027f2bf.js",
     "static/js/2.fb89a4e0.chunk.js",
-    "static/js/main.96278bbc.chunk.js"
+    "static/js/main.a45033ec.chunk.js"
   ]
 }
