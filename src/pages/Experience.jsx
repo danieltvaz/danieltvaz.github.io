@@ -7,7 +7,7 @@ const experienceData = [
   {
     name: "www.kotas.com.br",
     icon: kotasLogo,
-    text: "Atuação como Frontend Developer, realizando manutenção e criando novas funcionalidades utilizando VueJS, bem como suas ferramentas: Vuex, Router, etc.",
+    text: "Atuação como Frontend Developer principal, mentorando outros desenvolvedores, realizando manutenção, otimizando performance da plataforma e criando novas funcionalidades utilizando VueJS, bem como suas ferramentas: Vuex, Router, etc.",
     title: "Frontend Developer",
   },
 ];
