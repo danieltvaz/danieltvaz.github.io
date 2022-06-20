@@ -62,13 +62,16 @@ export default function About() {
       <MeWrapper>
         <TextWrapper>
           <Paragraph>
-            Sou Desenvolvedor Web Frontend, prezo pelo código limpo e
-            metodologias ágeis na entrega de resultados. Busco cada vez mais o
-            conhecimento em novas tecnologias e aprimorar o que já domino.
+            Desenvolvedor Mobile & Web, prezo pelo código limpo e metodologias ágeis na entrega de resultados. Busco cada vez mais o conhecimento em
+            novas tecnologias e aprimorar o que já domino.
           </Paragraph>
           <Paragraph>
-            Utilizo HTML, CSS, JavaScript e ReactJS para construir interfaces
-            responsivas e com as melhores praticas do mercado.
+            Utilizo HTML, CSS, Typescript, JavaScript, ReactJS, React Native, VueJS dentre outros para construir aplicações que agregam valor a
+            empresas e pessoas.
+          </Paragraph>
+          <Paragraph>
+            Tenho como destaque em minhas habilidades a comunicação, trabalho em equipe, oratória, e a que mais me destaco: facilidade e velocidade em
+            aprender coisas que me tiram da zona de conforto e me instigam em desafios.
           </Paragraph>
         </TextWrapper>
         <ImgWrapper>
