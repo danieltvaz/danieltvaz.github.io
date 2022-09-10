@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.96d92e89.chunk.js",
-    "main.js.map": "/static/js/main.96d92e89.chunk.js.map",
+    "main.js": "/static/js/main.e0794300.chunk.js",
+    "main.js.map": "/static/js/main.e0794300.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f027f2bf.js",
     "runtime-main.js.map": "/static/js/runtime-main.f027f2bf.js.map",
     "static/js/2.fb89a4e0.chunk.js": "/static/js/2.fb89a4e0.chunk.js",
@@ -24,6 +24,7 @@
     "static/media/me2.f5348946.png": "/static/media/me2.f5348946.png",
     "static/media/nodejs.007e99f6.png": "/static/media/nodejs.007e99f6.png",
     "static/media/programa-para-internet-javascript-DB9B06BF-1.4c6b5f6c.jpg": "/static/media/programa-para-internet-javascript-DB9B06BF-1.4c6b5f6c.jpg",
+    "static/media/rbmweb.061bb2e3.jpg": "/static/media/rbmweb.061bb2e3.jpg",
     "static/media/react-native-linkedin.4ab21773.png": "/static/media/react-native-linkedin.4ab21773.png",
     "static/media/react-native-udemy.2bad72f6.jpg": "/static/media/react-native-udemy.2bad72f6.jpg",
     "static/media/react-testing-linkedin.c9ff5d37.png": "/static/media/react-testing-linkedin.c9ff5d37.png",
@@ -35,6 +36,6 @@
   "entrypoints": [
     "static/js/runtime-main.f027f2bf.js",
     "static/js/2.fb89a4e0.chunk.js",
-    "static/js/main.96d92e89.chunk.js"
+    "static/js/main.e0794300.chunk.js"
   ]
 }
