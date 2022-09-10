@@ -17,3 +17,5 @@ export default function SectionTitle({ children }) {
     </Wrapper>
   );
 }
+
+//css in js
