@@ -1,8 +1,7 @@
-import styled from "styled-components";
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
-
-import me2 from "../assets/me2.png";
+import me from "../assets/me.png";
+import styled from "styled-components";
 
 const Paragraph = styled.p`
   color: ${({ theme }) => theme.text};
@@ -17,7 +16,7 @@ const ImgWrapper = styled.div`
   left: 80px;
   top: -50px;
   width: 300px;
-  height: 600px;
+  height: 400px;
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     height: 400px;
     width: 200px;
@@ -29,11 +28,11 @@ const ImgWrapper = styled.div`
     width: 400px;
     /* transform: translate(-50%, -50%); */
     position: absolute;
-    top: 56px;
+    top: 32px;
     left: 0;
     @media screen and (min-width: 320px) and (max-width: 1023px) {
       width: 300px;
-      top: -9px;
+      top: 124px;
     }
   }
 `;
@@ -75,7 +74,7 @@ export default function About() {
           </Paragraph>
         </TextWrapper>
         <ImgWrapper>
-          <img src={me2} alt="daniel tostes" />
+          <img src={me} alt="daniel tostes" />
         </ImgWrapper>
       </MeWrapper>
     </Section>
