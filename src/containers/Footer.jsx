@@ -1,5 +1,6 @@
+import { useEffect, useState } from "react";
+
 import styled from "styled-components";
-import { useState, useEffect } from "react";
 
 const Wrapper = styled.footer`
   display: flex;
@@ -29,7 +30,7 @@ export default function Footer() {
 
   useEffect(() => {
     setPageHeight(document.body.offsetHeight);
-  }, []);
+  });
 
   return (
     <Wrapper pageHeight={pageHeight}>
