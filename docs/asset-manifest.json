@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.dedddfb7.chunk.js",
-    "main.js.map": "/static/js/main.dedddfb7.chunk.js.map",
+    "main.js": "/static/js/main.3dd84d25.chunk.js",
+    "main.js.map": "/static/js/main.3dd84d25.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f027f2bf.js",
     "runtime-main.js.map": "/static/js/runtime-main.f027f2bf.js.map",
-    "static/js/2.fb89a4e0.chunk.js": "/static/js/2.fb89a4e0.chunk.js",
-    "static/js/2.fb89a4e0.chunk.js.map": "/static/js/2.fb89a4e0.chunk.js.map",
+    "static/js/2.80aa6d9f.chunk.js": "/static/js/2.80aa6d9f.chunk.js",
+    "static/js/2.80aa6d9f.chunk.js.map": "/static/js/2.80aa6d9f.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.fb89a4e0.chunk.js.LICENSE.txt": "/static/js/2.fb89a4e0.chunk.js.LICENSE.txt",
+    "static/js/2.80aa6d9f.chunk.js.LICENSE.txt": "/static/js/2.80aa6d9f.chunk.js.LICENSE.txt",
     "static/media/Introducao-ao-git-BB37395A-1.976e014d.jpg": "/static/media/Introducao-ao-git-BB37395A-1.976e014d.jpg",
     "static/media/aceleracao-avanade-01C2F20A_page-0001.9dbdaf09.jpg": "/static/media/aceleracao-avanade-01C2F20A_page-0001.9dbdaf09.jpg",
     "static/media/avancadas-reactjs-9691347F_page-0001.156e55a0.jpg": "/static/media/avancadas-reactjs-9691347F_page-0001.156e55a0.jpg",
@@ -35,7 +35,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f027f2bf.js",
-    "static/js/2.fb89a4e0.chunk.js",
-    "static/js/main.dedddfb7.chunk.js"
+    "static/js/2.80aa6d9f.chunk.js",
+    "static/js/main.3dd84d25.chunk.js"
   ]
 }
