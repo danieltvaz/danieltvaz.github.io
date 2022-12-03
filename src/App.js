@@ -1,15 +1,16 @@
-import useDarkMode from "./hooks/useDarkMode";
-import { Element } from "react-scroll";
-import Footer from "./containers/Footer";
-import Theme from "./styles/Theme";
-import SideBar from "./containers/SideBar";
-import GlobalStyle from "./styles/global";
-import styled from "styled-components";
 import About from "./pages/About";
-import Skills from "./pages/Skills";
 import Certificates from "./pages/Certificates";
-import Projects from "./pages/Projects";
+import { Element } from "react-scroll";
 import Experience from "./pages/Experience";
+import Footer from "./containers/Footer";
+import GlobalStyle from "./styles/global";
+import MainContentWrapper from "./components/MainContentWrapper";
+import Projects from "./pages/Projects";
+import SideBar from "./containers/SideBar";
+import Skills from "./pages/Skills";
+import Theme from "./styles/Theme";
+import styled from "styled-components";
+import useDarkMode from "./hooks/useDarkMode";
 
 const AppWrapper = styled.div`
   display: flex;
@@ -24,7 +25,7 @@ function App() {
         <GlobalStyle />
         <AppWrapper>
           <SideBar setDarkMode={setDarkMode} darkMode={darkMode} />
-          <div>
+          <MainContentWrapper>
             <Element name="about">
               <About />
             </Element>
@@ -41,7 +42,7 @@ function App() {
               <Certificates />
             </Element>
             <Footer />
-          </div>
+          </MainContentWrapper>
         </AppWrapper>
       </Theme>
     </>
