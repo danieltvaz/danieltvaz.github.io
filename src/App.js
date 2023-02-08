@@ -29,9 +29,9 @@ function App() {
             <Element name="about">
               <About />
             </Element>
-            <Element id="projects">
+            {/* <Element id="projects">
               <Projects />
-            </Element>
+            </Element> */}
             <Element id="skills">
               <Skills />
             </Element>

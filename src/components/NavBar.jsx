@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import { faBriefcase, faCertificate, faCode, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faCode, faCertificate, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import styled from "styled-components";
 
 const Wrapper = styled.nav`
   display: flex;
@@ -60,7 +61,7 @@ const LinkName = styled.span`
 
 const destinations = [
   { target: "about", name: "Sobre", icon: faHome },
-  { target: "projects", name: "Projetos", icon: faCode },
+  // { target: "projects", name: "Projetos", icon: faCode },
   { target: "skills", name: "Habilidades", icon: faUser },
   { target: "experience", name: "Experiência", icon: faBriefcase },
   { target: "certificates", name: "Certificados", icon: faCertificate },
