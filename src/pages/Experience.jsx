@@ -14,7 +14,7 @@ const experienceData = [
   {
     name: "www.rbmweb.com.br",
     icon: rbmwebLogo,
-    text: "Atuação como Tech Lead, utilizando React e React Native para construir aplicações, prestar manutenção, realizar melhorias e corrigindo falhas de segurança, bem como gerir, instruir, monitrar e mentorar um time com 17 desenvolvedores. Atuante também como mentor em cursos oferecidos pela empresa para colaboradores e prósperos a colaboradores.",
+    text: "Atuação como Tech Lead, utilizando React e React Native para construir aplicações, prestar manutenção, realizar melhorias e corrigindo falhas de segurança, bem como gerir, instruir, monitrar e mentorar um time com 17 desenvolvedores. Atuante também como mentor em cursos oferecidos pela empresa para colaboradores e prósperos a colaboradores. Arquiteto e cabeça por trás da nova arquitetura do aplicativo de Banco Digital, produto ofertado pela empresa, solução no qual desenvolvi sozinho de ponta a ponta.",
     title: "Frontend/Mobile Tech Lead",
   },
 ];
