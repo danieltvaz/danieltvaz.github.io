@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.3dd84d25.chunk.js",
-    "main.js.map": "/static/js/main.3dd84d25.chunk.js.map",
+    "main.js": "/static/js/main.58738a68.chunk.js",
+    "main.js.map": "/static/js/main.58738a68.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f027f2bf.js",
     "runtime-main.js.map": "/static/js/runtime-main.f027f2bf.js.map",
-    "static/js/2.80aa6d9f.chunk.js": "/static/js/2.80aa6d9f.chunk.js",
-    "static/js/2.80aa6d9f.chunk.js.map": "/static/js/2.80aa6d9f.chunk.js.map",
+    "static/js/2.c0cc3db6.chunk.js": "/static/js/2.c0cc3db6.chunk.js",
+    "static/js/2.c0cc3db6.chunk.js.map": "/static/js/2.c0cc3db6.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.80aa6d9f.chunk.js.LICENSE.txt": "/static/js/2.80aa6d9f.chunk.js.LICENSE.txt",
+    "static/js/2.c0cc3db6.chunk.js.LICENSE.txt": "/static/js/2.c0cc3db6.chunk.js.LICENSE.txt",
     "static/media/Introducao-ao-git-BB37395A-1.976e014d.jpg": "/static/media/Introducao-ao-git-BB37395A-1.976e014d.jpg",
     "static/media/aceleracao-avanade-01C2F20A_page-0001.9dbdaf09.jpg": "/static/media/aceleracao-avanade-01C2F20A_page-0001.9dbdaf09.jpg",
     "static/media/avancadas-reactjs-9691347F_page-0001.156e55a0.jpg": "/static/media/avancadas-reactjs-9691347F_page-0001.156e55a0.jpg",
@@ -22,6 +22,7 @@
     "static/media/linux.c98b4558.png": "/static/media/linux.c98b4558.png",
     "static/media/logica-de-programacao-essencial-1D90D0DC-1.f547f1b2.jpg": "/static/media/logica-de-programacao-essencial-1D90D0DC-1.f547f1b2.jpg",
     "static/media/me.9379c15e.png": "/static/media/me.9379c15e.png",
+    "static/media/mysql.7d8d571e.png": "/static/media/mysql.7d8d571e.png",
     "static/media/nodejs.007e99f6.png": "/static/media/nodejs.007e99f6.png",
     "static/media/programa-para-internet-javascript-DB9B06BF-1.4c6b5f6c.jpg": "/static/media/programa-para-internet-javascript-DB9B06BF-1.4c6b5f6c.jpg",
     "static/media/rbmweb.061bb2e3.jpg": "/static/media/rbmweb.061bb2e3.jpg",
@@ -30,12 +31,13 @@
     "static/media/react-testing-linkedin.c9ff5d37.png": "/static/media/react-testing-linkedin.c9ff5d37.png",
     "static/media/reactjs.86c8d9eb.png": "/static/media/reactjs.86c8d9eb.png",
     "static/media/scrum.468dc316.png": "/static/media/scrum.468dc316.png",
+    "static/media/sequelize.e556895b.png": "/static/media/sequelize.e556895b.png",
     "static/media/styledcomponents.61b1069d.png": "/static/media/styledcomponents.61b1069d.png",
     "static/media/vue-mastery-udemy.3aa8a3a6.jpg": "/static/media/vue-mastery-udemy.3aa8a3a6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f027f2bf.js",
-    "static/js/2.80aa6d9f.chunk.js",
-    "static/js/main.3dd84d25.chunk.js"
+    "static/js/2.c0cc3db6.chunk.js",
+    "static/js/main.58738a68.chunk.js"
   ]
 }
