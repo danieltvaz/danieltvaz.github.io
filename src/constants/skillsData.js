@@ -1,16 +1,19 @@
-import htmlIcon from "../assets/skills/html5.png";
 import css3Icon from "../assets/skills/css3.png";
-import javascriptIcon from "../assets/skills/javascript.png";
-import styledcomponentsIcon from "../assets/skills/styledcomponents.png";
-import reactjsIcon from "../assets/skills/reactjs.png";
+import expressjsIcon from "../assets/skills/express.png";
 import gitIcon from "../assets/skills/git.png";
-import nodejsIcon from "../assets/skills/nodejs.png";
-import scrumIcon from "../assets/skills/scrum.png";
+import htmlIcon from "../assets/skills/html5.png";
+import javascriptIcon from "../assets/skills/javascript.png";
 import linuxIcon from "../assets/skills/linux.png";
-import vueIcon from "../assets/skills/vue.png";
-import sassIcon from "../assets/skills/sass.png";
-import typescriptIcon from "../assets/skills/typescript.png";
+import mysqlIcon from "../assets/skills/mysql.png";
+import nodejsIcon from "../assets/skills/nodejs.png";
+import reactjsIcon from "../assets/skills/reactjs.png";
 import reactnativeIcon from "../assets/skills/reactnative.png";
+import sassIcon from "../assets/skills/sass.png";
+import scrumIcon from "../assets/skills/scrum.png";
+import sequelizeIcon from "../assets/skills/sequelize.png";
+import styledcomponentsIcon from "../assets/skills/styledcomponents.png";
+import typescriptIcon from "../assets/skills/typescript.png";
+import vueIcon from "../assets/skills/vue.png";
 
 export const skillsData = [
   {
@@ -59,6 +62,18 @@ export const skillsData = [
   {
     name: "nodejs",
     icon: nodejsIcon,
+  },
+  {
+    name: "express.js",
+    icon: expressjsIcon,
+  },
+  {
+    name: "sequelize ORM",
+    icon: sequelizeIcon,
+  },
+  {
+    name: "MySql",
+    icon: mysqlIcon,
   },
   {
     name: "scrum",
