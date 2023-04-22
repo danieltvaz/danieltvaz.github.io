@@ -23,7 +23,7 @@ const Text = styled.p`
 export default function Footer() {
   return (
     <Wrapper>
-      <Text>Desenvolvido por Daniel Tostes @ 2021 - Todos os direitos reservados</Text>
+      <Text>Desenvolvido por Daniel Tostes @ {new Date().getFullYear()} - Todos os direitos reservados</Text>
     </Wrapper>
   );
 }
