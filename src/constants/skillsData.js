@@ -6,6 +6,8 @@ import javascriptIcon from "../assets/skills/javascript.png";
 import linuxIcon from "../assets/skills/linux.png";
 import mysqlIcon from "../assets/skills/mysql.png";
 import nodejsIcon from "../assets/skills/nodejs.png";
+import phpIcon from '../assets/skills/php.png';
+import prismaOrm from '../assets/skills/prisma.png';
 import reactjsIcon from "../assets/skills/reactjs.png";
 import reactnativeIcon from "../assets/skills/reactnative.png";
 import sassIcon from "../assets/skills/sass.png";
@@ -17,12 +19,24 @@ import vueIcon from "../assets/skills/vue.png";
 
 export const skillsData = [
   {
+    name: "typescript",
+    icon: typescriptIcon,
+  },
+  {
     name: "javascript",
     icon: javascriptIcon,
   },
   {
-    name: "typescript",
-    icon: typescriptIcon,
+    name: "git",
+    icon: gitIcon,
+  },
+  {
+    name: "nodejs",
+    icon: nodejsIcon,
+  },
+  {
+    name: "PHP",
+    icon: phpIcon
   },
   {
     name: "react",
@@ -33,6 +47,14 @@ export const skillsData = [
     icon: reactnativeIcon,
   },
   {
+    name: "VueJS",
+    icon: vueIcon,
+  },
+  {
+    name: "styled components",
+    icon: styledcomponentsIcon,
+  },
+  {
     name: "html",
     icon: htmlIcon,
   },
@@ -40,32 +62,18 @@ export const skillsData = [
     name: "css3",
     icon: css3Icon,
   },
-
-  {
-    name: "VueJS",
-    icon: vueIcon,
-  },
-
-  {
-    name: "styled components",
-    icon: styledcomponentsIcon,
-  },
   {
     name: "Sass",
     icon: sassIcon,
   },
 
   {
-    name: "git",
-    icon: gitIcon,
-  },
-  {
-    name: "nodejs",
-    icon: nodejsIcon,
-  },
-  {
     name: "express.js",
     icon: expressjsIcon,
+  },
+  {
+    name: "Prisma ORM",
+    icon: prismaOrm
   },
   {
     name: "sequelize ORM",
