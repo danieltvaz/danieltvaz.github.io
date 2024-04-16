@@ -61,12 +61,12 @@ export default function About() {
       <MeWrapper>
         <TextWrapper>
           <Paragraph>
-            Desenvolvedor Mobile & Web, prezo pelo código limpo e metodologias ágeis na entrega de resultados. Busco cada vez mais o conhecimento em
+            Desenvolvedor de Software Fullstack, prezo pelo código limpo e metodologias ágeis na entrega de resultados. Busco cada vez mais o conhecimento em
             novas tecnologias e aprimorar o que já domino.
           </Paragraph>
           <Paragraph>
-            Utilizo HTML, CSS, Typescript, JavaScript, ReactJS, React Native, VueJS dentre outros para construir aplicações que agregam valor a
-            empresas e pessoas.
+            Utilizo as principais tecnologias do mercado para construir aplicações que agregam valor a
+            negócios e pessoas.
           </Paragraph>
           <Paragraph>
             Tenho como destaque em minhas habilidades a comunicação, trabalho em equipe, oratória, e a que mais me destaco: facilidade e velocidade em
