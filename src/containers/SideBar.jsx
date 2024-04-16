@@ -1,15 +1,15 @@
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
-  faTimes,
-  faSun,
   faMoon,
+  faSun,
+  faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 
-import styled from "styled-components";
-import NavBar from "../components/NavBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MyLogo from "../components/MyLogo";
+import NavBar from "../components/NavBar";
+import styled from "styled-components";
+import { useState } from "react";
 
 const HeaderWrapper = styled.aside`
   display: flex;
@@ -96,9 +96,7 @@ export default function SideBar({ setDarkMode, darkMode }) {
           <Button onClick={() => setIsOpen((state) => !state)}>
             <StyledIcon icon={isOpen ? faTimes : faBars} />
           </Button>
-
           <MyLogo />
-
           <NavBar />
           <div>
             <DarkModeButton onClick={() => setDarkMode((state) => !state)}>
