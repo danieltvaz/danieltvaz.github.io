@@ -9,8 +9,8 @@ export default function Academic() {
       <SectionTitle>Acadêmico</SectionTitle>
       <List data={[
         {
-          title: 'Análise e Desenvolvimento de Sistemas',
-          description: 'Graduação Tecnológica'
+          title: 'Graduação',
+          description: 'Análise e Desenvolvimento de Sistemas'
         },
         {
           title: 'Pós Gradução - MBA',
