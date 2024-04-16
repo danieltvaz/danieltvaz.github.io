@@ -1,11 +1,11 @@
 import About from "./pages/About";
+import Academic from './pages/Academic';
 import Certificates from "./pages/Certificates";
 import { Element } from "react-scroll";
 import Experience from "./pages/Experience";
 import Footer from "./containers/Footer";
 import GlobalStyle from "./styles/global";
 import MainContentWrapper from "./components/MainContentWrapper";
-import Projects from "./pages/Projects";
 import SideBar from "./containers/SideBar";
 import Skills from "./pages/Skills";
 import Theme from "./styles/Theme";
@@ -29,14 +29,14 @@ function App() {
             <Element name="about">
               <About />
             </Element>
-            {/* <Element id="projects">
-              <Projects />
-            </Element> */}
             <Element id="skills">
               <Skills />
             </Element>
             <Element id="experience">
               <Experience />
+            </Element>
+            <Element id="academic">
+              <Academic />
             </Element>
             <Element id="certificates">
               <Certificates />
