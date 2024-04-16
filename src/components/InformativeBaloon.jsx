@@ -11,7 +11,8 @@ const Baloon = styled.div`
   max-width: 750px;
 
   @media screen and (min-width: 320px) and (max-width: 1023px) {
-    margin-top: 100px;
+    margin-top: 200px;
+
   }
 
   &:after {
@@ -26,6 +27,7 @@ const Baloon = styled.div`
     right: -3px;
     top: 50%;
     transform: rotate(135deg) translate(-50%, 0);
+
     @media screen and (min-width: 320px) and (max-width: 1023px) {
       content: "";
       width: 0px;
@@ -51,6 +53,7 @@ const BaloonIcon = styled.img`
   transform: translate(0, -50%);
   user-select: none;
   -webkit-user-drag: none;
+
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     width: 140px;
     position: absolute;
