@@ -49,5 +49,5 @@ jobs:
             echo "🚀 Restarting application with pm2..."
             pm2 describe danieltvaz.github.io > /dev/null \
               && pm2 restart danieltvaz.github.io \
-              || pm2 start npx --name danieltvaz.github.io -- serve -s build -l 3002
+              || pm2 start npx --name danieltvaz.github.io -- serve -s build -l 3003
           EOF
