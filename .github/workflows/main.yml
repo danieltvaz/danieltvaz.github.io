@@ -1,0 +1,48 @@
+name: deploy-danieltvaz.github.io-ec2
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: aws_ec2
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies and build CRA
+        run: |
+          npm install
+          npm run build
+          tar -czf build.tar.gz build
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Upload build to EC2
+        run: |
+          scp -i ~/.ssh/id_ed25519 build.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/build.tar.gz
+
+      - name: Update EC2 with new build
+        run: |
+          ssh -i ~/.ssh/id_ed25519 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+            set -e
+            cd ~/danieltvaz.github.io
+            echo "🔄 Cleaning up previous build..."
+            rm -rf build
+            echo "📦 Extracting new build..."
+            tar -xzf ~/build.tar.gz
+            rm ~/build.tar.gz
+            echo "🚀 Restarting application with pm2..."
+            pm2 describe danieltvaz.github.io > /dev/null \
+              && pm2 restart danieltvaz.github.io \
+              || pm2 start npx --name danieltvaz.github.io -- serve -s build -l 3002
+          EOF
