@@ -12,7 +12,6 @@ const Baloon = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     margin-top: 200px;
-
   }
 
   &:after {
@@ -77,7 +76,7 @@ export default function InformativeBaloon({ data, index }) {
     <>
       <Baloon>
         <BaloonTitle>
-          <a href={`https://${data?.name}`} target="_blank" rel="noreferrer">
+          <a href={`https://${data?.link}`} target="_blank" rel="noreferrer">
             {data?.name}
           </a>
           {" - " + data?.title}
