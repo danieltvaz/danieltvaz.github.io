@@ -1,10 +1,11 @@
 name: deploy-danieltvaz.github.io-ec2
 
 on:
-  push:
+  workflow_run:
     branches:
       - master
-
+    workflows:
+      - build-danieltvaz.github.io
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,7 +18,7 @@ jobs:
       - name: Use Node.js 16
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: "16"
 
       - name: Install dependencies and build CRA
         run: |
