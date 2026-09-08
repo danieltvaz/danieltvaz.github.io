@@ -9,6 +9,7 @@ export default function Skills() {
     <Section>
       <SectionTitle>Habilidades</SectionTitle>
       <Grid optionName data={skillsData} />
+
       <ImpactText>
         "A persistência é o melhor caminho do êxito." <br /> Charles Chaplin.
       </ImpactText>

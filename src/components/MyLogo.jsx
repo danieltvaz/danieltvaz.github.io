@@ -28,7 +28,7 @@ export default function MyLogo() {
   return (
     <LogoWrapper>
       <MyName>Daniel Tostes</MyName>
-      <Title>Web Developer</Title>
+      <Title>Solutions Architect</Title>
     </LogoWrapper>
   );
 }

@@ -61,12 +61,12 @@ export default function About() {
       <MeWrapper>
         <TextWrapper>
           <Paragraph>
-            Desenvolvedor de Software Fullstack, prezo pelo código limpo e metodologias ágeis na entrega de resultados. Busco cada vez mais o conhecimento em
-            novas tecnologias e aprimorar o que já domino.
+            Arquiteto de Soluções, focado em AWS e sistemas distribuídos. Venho de uma sólida base como desenvolvedor Full-Stack, o que me dá uma visão
+            completa do ciclo de vida do software, da arquitetura à implementação.
           </Paragraph>
           <Paragraph>
-            Utilizo as principais tecnologias do mercado para construir aplicações que agregam valor a
-            negócios e pessoas.
+            Atuo no desenho de arquiteturas escaláveis e resilientes, unindo boas práticas de microsserviços, persistência de dados e estratégias de cache
+            para construir soluções que agregam valor a negócios e pessoas.
           </Paragraph>
           <Paragraph>
             Tenho como destaque em minhas habilidades a comunicação, trabalho em equipe, oratória, e a que mais me destaco: facilidade e velocidade em

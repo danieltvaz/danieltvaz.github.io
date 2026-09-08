@@ -70,6 +70,15 @@ const BaloonTitle = styled.h2`
     text-decoration: none;
   }
 `;
+const RoleTitle = styled.h3`
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 2px;
+
+  &:first-of-type {
+    margin-top: 6px;
+  }
+`;
 
 export default function InformativeBaloon({ data, index }) {
   return (
@@ -79,9 +88,13 @@ export default function InformativeBaloon({ data, index }) {
           <a href={`https://${data?.link}`} target="_blank" rel="noreferrer">
             {data?.name}
           </a>
-          {" - " + data?.title}
         </BaloonTitle>
-        <BaloonText>{data?.text}</BaloonText>
+        {data?.roles?.map((role, roleIndex) => (
+          <div key={roleIndex}>
+            <RoleTitle>{role.title}</RoleTitle>
+            <BaloonText>{role.text}</BaloonText>
+          </div>
+        ))}
         <BaloonIcon src={data?.icon} />
       </Baloon>
     </>
