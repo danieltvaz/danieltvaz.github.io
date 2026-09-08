@@ -6,6 +6,7 @@ import Experience from "./pages/Experience";
 import Footer from "./containers/Footer";
 import GlobalStyle from "./styles/global";
 import MainContentWrapper from "./components/MainContentWrapper";
+import Projects from "./pages/Projects";
 import SideBar from "./containers/SideBar";
 import Skills from "./pages/Skills";
 import Theme from "./styles/Theme";
@@ -28,6 +29,9 @@ function App() {
           <MainContentWrapper>
             <Element name="about">
               <About />
+            </Element>
+            <Element id="projects">
+              <Projects />
             </Element>
             <Element id="skills">
               <Skills />

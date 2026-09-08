@@ -1,4 +1,4 @@
-import { faBookOpen, faBriefcase, faCertificate, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBookOpen, faBriefcase, faCertificate, faCode, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -61,7 +61,7 @@ const LinkName = styled.span`
 
 const destinations = [
   { target: "about", name: "Sobre", icon: faHome },
-  // { target: "projects", name: "Projetos", icon: faCode },
+  { target: "projects", name: "Projetos", icon: faCode },
   { target: "skills", name: "Habilidades", icon: faUser },
   { target: "experience", name: "Experiência", icon: faBriefcase },
   { target: "academic", name: "Acadêmico", icon: faBookOpen },

@@ -14,7 +14,15 @@ export default function List({ data }) {
       {data?.map((data, index) => (
         <>
         <li key={index}>
-          <p>{data?.title}</p>
+          <p>
+            {data?.link ? (
+              <a href={data.link} target="_blank" rel="noreferrer">
+                {data?.title}
+              </a>
+            ) : (
+              data?.title
+            )}
+          </p>
           <p>- {data.description}</p>
         </li>
       <Spacer/>
