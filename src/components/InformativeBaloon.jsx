@@ -80,6 +80,11 @@ const RoleTitle = styled.h3`
   }
 `;
 
+const RolePeriod = styled.span`
+  font-weight: 400;
+  font-style: italic;
+`;
+
 export default function InformativeBaloon({ data, index }) {
   return (
     <>
@@ -91,7 +96,10 @@ export default function InformativeBaloon({ data, index }) {
         </BaloonTitle>
         {data?.roles?.map((role, roleIndex) => (
           <div key={roleIndex}>
-            <RoleTitle>{role.title}</RoleTitle>
+            <RoleTitle>
+              {role.title}
+              {role.period && <RolePeriod> · {role.period}</RolePeriod>}
+            </RoleTitle>
             <BaloonText>{role.text}</BaloonText>
           </div>
         ))}

@@ -1,16 +1,10 @@
-import apigatewayIcon from "../assets/skills/apigateway.svg";
 import awsIcon from "../assets/skills/aws.svg";
-import cloudfrontIcon from "../assets/skills/cloudfront.svg";
 import css3Icon from "../assets/skills/css3.png";
-import dynamodbIcon from "../assets/skills/dynamodb.svg";
-import ecsIcon from "../assets/skills/ecs.svg";
-import elasticacheIcon from "../assets/skills/elasticache.svg";
 import expressjsIcon from "../assets/skills/express.png";
-import fargateIcon from "../assets/skills/fargate.svg";
 import gitIcon from "../assets/skills/git.png";
 import htmlIcon from "../assets/skills/html5.png";
 import javascriptIcon from "../assets/skills/javascript.png";
-import lambdaIcon from "../assets/skills/lambda.svg";
+import kotlinIcon from "../assets/skills/kotlin.svg";
 import linuxIcon from "../assets/skills/linux.png";
 import mongodbIcon from "../assets/skills/mongodb.svg";
 import mysqlIcon from "../assets/skills/mysql.png";
@@ -18,11 +12,9 @@ import nodejsIcon from "../assets/skills/nodejs.png";
 import phpIcon from '../assets/skills/php.png';
 import postgresqlIcon from "../assets/skills/postgresql.svg";
 import prismaOrm from '../assets/skills/prisma.png';
-import rdsIcon from "../assets/skills/rds.svg";
 import reactjsIcon from "../assets/skills/reactjs.png";
 import reactnativeIcon from "../assets/skills/reactnative.png";
 import redisIcon from "../assets/skills/redis.svg";
-import s3Icon from "../assets/skills/s3.svg";
 import sassIcon from "../assets/skills/sass.png";
 import scrumIcon from "../assets/skills/scrum.png";
 import sequelizeIcon from "../assets/skills/sequelize.png";
@@ -47,6 +39,10 @@ export const skillsData = [
   {
     name: "nodejs",
     icon: nodejsIcon,
+  },
+  {
+    name: "Kotlin",
+    icon: kotlinIcon,
   },
   {
     name: "PHP",
@@ -114,10 +110,6 @@ export const skillsData = [
     icon: postgresqlIcon,
   },
   {
-    name: "DynamoDB",
-    icon: dynamodbIcon,
-  },
-  {
     name: "MongoDB",
     icon: mongodbIcon,
   },
@@ -128,37 +120,5 @@ export const skillsData = [
   {
     name: "Valkey",
     icon: valkeyIcon,
-  },
-  {
-    name: "ElastiCache",
-    icon: elasticacheIcon,
-  },
-  {
-    name: "Lambda",
-    icon: lambdaIcon,
-  },
-  {
-    name: "API Gateway",
-    icon: apigatewayIcon,
-  },
-  {
-    name: "S3",
-    icon: s3Icon,
-  },
-  {
-    name: "CloudFront",
-    icon: cloudfrontIcon,
-  },
-  {
-    name: "RDS / Aurora",
-    icon: rdsIcon,
-  },
-  {
-    name: "ECS",
-    icon: ecsIcon,
-  },
-  {
-    name: "Fargate",
-    icon: fargateIcon,
   },
 ];

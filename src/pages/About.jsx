@@ -61,16 +61,17 @@ export default function About() {
       <MeWrapper>
         <TextWrapper>
           <Paragraph>
-            Arquiteto de Soluções, focado em AWS e sistemas distribuídos. Venho de uma sólida base como desenvolvedor Full-Stack, o que me dá uma visão
-            completa do ciclo de vida do software, da arquitetura à implementação.
+            Arquiteto de Soluções com atuação em desenho de arquitetura, refatoração de sistemas legados e construção de novas plataformas do zero, em
+            contextos de serviços financeiros (contas digitais, meios de pagamento e plataformas BaaS) e de streaming de conteúdo digital.
           </Paragraph>
           <Paragraph>
-            Atuo no desenho de arquiteturas escaláveis e resilientes, unindo boas práticas de microsserviços, persistência de dados e estratégias de cache
-            para construir soluções que agregam valor a negócios e pessoas.
+            Trabalho com microserviços, sistemas distribuídos e arquitetura orientada a eventos, principalmente na AWS. Tenho background como
+            desenvolvedor e líder técnico, o que me aproxima da implementação das decisões arquiteturais: definição de padrões, revisões técnicas,
+            mentoria e alinhamento com as áreas de produto e negócio.
           </Paragraph>
           <Paragraph>
-            Tenho como destaque em minhas habilidades a comunicação, trabalho em equipe, oratória, e a que mais me destaco: facilidade e velocidade em
-            aprender coisas que me tiram da zona de conforto e me instigam em desafios.
+            Atuo com metodologias ágeis (Scrum e Kanban), tenho vivência em times que adotam o modelo de desenvolvimento AI-First e inglês avançado em
+            leitura, escrita e conversação.
           </Paragraph>
         </TextWrapper>
         <ImgWrapper>

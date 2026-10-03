@@ -9,16 +9,16 @@ export default function Academic() {
       <SectionTitle>Acadêmico</SectionTitle>
       <List data={[
         {
-          title: 'Graduação',
-          description: 'Análise e Desenvolvimento de Sistemas'
+          title: 'Graduação - 2022',
+          description: 'Análise e Desenvolvimento de Sistemas - Universidade Norte do Paraná'
         },
         {
-          title: 'Pós Gradução - MBA',
-          description: 'Gestão de Projetos de TI'
+          title: 'MBA - 2023',
+          description: 'Gestão de Projetos de TI - Universidade Norte do Paraná'
         },
         {
-          title: 'Pós Gradução - Latu Sensu',
-          description: 'Engenharia de Software'
+          title: 'Pós-graduação - 2023',
+          description: 'Engenharia de Software - Universidade Norte do Paraná'
         },
       ]}/>
       <ImpactText>
